@@ -1,7 +1,7 @@
 class OrdersController < ApplicationController
 
   def show
-    @order = Order.find(params[:id])
+    @order = Order.includes(:line_items).where(id: params[:id]).first
   end
 
   def create
@@ -22,7 +22,7 @@ class OrdersController < ApplicationController
   private
 
   def empty_cart!
-    # empty hash means no products in cart :)
+    # empty hash means no products in cart 🙂
     update_cart({})
   end
 
