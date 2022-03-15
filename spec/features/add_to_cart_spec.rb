@@ -18,7 +18,7 @@ RSpec.feature "Visitor adds item to cart and updates cart number", type: :featur
 
     expect(page).to have_content('My Cart (0)')
     # DEBUG / VERIFY
-    save_screenshot
+    # save_screenshot
 
 
     click_on 'Add'
@@ -26,7 +26,7 @@ RSpec.feature "Visitor adds item to cart and updates cart number", type: :featur
     expect(page).to have_content('My Cart (1)')
 
     # DEBUG / VERIFY
-    save_screenshot
+    # save_screenshot
 
   end
 end

@@ -17,10 +17,10 @@ RSpec.feature "Visitor signs in with account", type: :feature, js: true do
     click_on 'Login'
     fill_in :email, with: 'wumbo@gmail.com'
     fill_in :password, with: 'Wumbology'
-    save_screenshot
+    # save_screenshot
     click_on 'Submit'
     expect(page).to have_content('Logout')
-    save_screenshot
+    # save_screenshot
 
   end
 end
