@@ -9,7 +9,6 @@ class User < ActiveRecord::Base
   #use self because it is a class method being called by User class
   def self.authenticate_with_credentials(email, password)
     user = User.find_by_email(email.strip.downcase)
-    puts user
 
     if user && user.authenticate(password) 
       return user
