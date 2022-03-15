@@ -19,9 +19,7 @@ RSpec.feature "Visitor signs in with account", type: :feature, js: true do
     fill_in :password, with: 'Wumbology'
     save_screenshot
     click_on 'Submit'
-
     expect(page).to have_content('Logout')
-    # DEBUG / VERIFY
     save_screenshot
 
   end
