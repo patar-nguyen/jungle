@@ -11,13 +11,6 @@ class User < ActiveRecord::Base
     user = User.find_by_email(email.strip.downcase)
     puts user
 
-    if user 
-      puts 'hello'
-    end
-
-    if user.authenticate(password)
-      puts 'nope'
-    end
     if user && user.authenticate(password) 
       return user
     else 
