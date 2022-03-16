@@ -33,3 +33,14 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screenshots
+Products
+![Products](https://github.com/patar-nguyen/jungle/blob/master/app/images/Products.jpg?raw=true)
+
+My Cart
+![My Cart](https://github.com/patar-nguyen/jungle/blob/master/app/images/My%20Cart.jpg?raw=true)
+
+Order Summary
+![Order Summary](https://github.com/patar-nguyen/jungle/blob/master/app/images/Order%20Summary.jpg?raw=true)
+
+Admin Products
+![Admin Products](https://github.com/patar-nguyen/jungle/blob/master/app/images/Admin%20Products%20Page.jpg?raw=true)
