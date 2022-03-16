@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   validates :name, presence: true
 
   #use self because it is a class method being called by User class
+  #authenticates user by matching email/password
   def self.authenticate_with_credentials(email, password)
     user = User.find_by_email(email.strip.downcase)
 
