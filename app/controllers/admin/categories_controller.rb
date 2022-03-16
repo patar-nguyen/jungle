@@ -1,16 +1,16 @@
 class Admin::CategoriesController < ApplicationController
-
+  #admin access only with username and password
   http_basic_authenticate_with name: 'Jungle', password: 'book'
-
+  #list of all categories
   def index
     @categories = Category.all
   end
-
+  #creates new category
   def new
     @category = Category.new
   end
 
-
+  # admin can create a new category
   def create
     @category = Category.new(category_params)
 

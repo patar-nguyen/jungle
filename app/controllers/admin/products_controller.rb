@@ -1,11 +1,11 @@
 class Admin::ProductsController < ApplicationController
 
   http_basic_authenticate_with name: 'Jungle', password: 'book'
-
+  #displays all products
   def index
     @products = Product.order(id: :desc).all
   end
-
+  #creating a new product
   def new
     @product = Product.new
   end
@@ -19,7 +19,7 @@ class Admin::ProductsController < ApplicationController
       render :new
     end
   end
-
+  #deleting a product
   def destroy
     @product = Product.find params[:id]
     @product.destroy
